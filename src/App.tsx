@@ -37,10 +37,10 @@ function App() {
       </header>
       <main>
         <section>
-          <div>
-            <img src={Logo} alt="Logo" />
-            <h1>Dozens of apps. One subscription. $9.99</h1>
-            <div className=''>
+          <div className='flex flex-col margin-x-auto items-center text-center gap-6 pt-20 pb-20 px-120'>
+            <img src={Logo} alt="Logo" className='w-[128.75px] h-[128.75px] bg-black p-4 rounded-4xl' />
+            <h1 className='text-7xl/19 font-bold'>Dozens of apps. One subscription. $9.99</h1>
+            <div className='flex'>
               <button className='bg-white text-[#26262B] px-6 py-2 rounded-md font-medium hover:cursor-pointer'>Try free for 7 days</button>
               <button className='bg-white text-[#26262B] px-6 py-2 rounded-md font-medium hover:cursor-pointer'><img src={Apple} alt="Apple Logo" /></button>
               <button className='bg-white text-[#26262B] px-6 py-2 rounded-md font-medium hover:cursor-pointer'><img src={Google} alt="Google Logo" /></button>
