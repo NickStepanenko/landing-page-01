@@ -19,6 +19,8 @@ import Secure from './assets/secure.svg';
 import MacJunk from './assets/img/mac-junk.png';
 import MacPink from './assets/img/mac-pink.png';
 
+import Arrow from './assets/arrow.svg';
+
 function App() {
 
   return (
@@ -97,10 +99,13 @@ function App() {
               <div></div>
               <div></div>
             </div>
-            <p>View all superpowers</p>
-            <div>
-              <p>Your Setapp journey.</p>
-              <p>Type in your task into Setapp search and get instant app recommendations.</p>
+            <div className='flex items-center justify-center gap-3 mt-[101px]'>
+              <img src={Arrow} alt="Arrow" />
+              <p className='text-[20px] tracking-[1.6px]'>View all superpowers</p>
+            </div>
+            <div className='flex my-[101px] items-start gap-6'>
+              <p className='flex-1 font-semibold text-[36px] leading-[52px]'>Your Setapp journey.</p>
+              <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal'>Type in your task into Setapp search and get instant app recommendations.</p>
             </div>
 
           </div>
