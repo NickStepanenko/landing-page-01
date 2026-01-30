@@ -83,11 +83,13 @@ function App() {
               <p className='flex-1 font-semibold text-[36px] leading-[52px]'>What you get on Setapp.</p>
               <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal pr-[45px]'>With a single monthly subscription at $9.99, you get 240+ apps for your Mac.</p>
             </div>
-            <div className='bg-[#DF96AE] rounded-[20px]'>
-              <div>
-                <img src={MacPink} alt="Mac Pink" />
-                <h2>Keep your Mac clean</h2>
-                <p>Remove junk, scan for malware, wipe email attachments</p>
+            <div className='bg-[#DF96AE] rounded-[20px] px-[37px]'>
+              <div className='flex pt-[60px] px-[23px] items-center gap-9'>
+                <img src={MacPink} alt="Mac Pink" className='row-span-2 h-[80px]' />
+                <div>
+                  <h2 className='text-[#26262B] font-semibold text-[26px] tracking-normal leading-[40px]'>Keep your Mac clean</h2>
+                  <p className='text-[#26262B] font-light text-[18px] leading-[32px] tracking-normal pr-[45px]'>Remove junk, scan for malware, wipe email attachments</p>
+                </div>
               </div>
               <img src={MacJunk} alt="Mac Junk" />
             </div>
