@@ -38,6 +38,10 @@ import Youtube from './assets/svg/youtube.svg';
 import FacebookIcon from './assets/svg/facebook-icon.svg';
 import InstagramIcon from './assets/svg/instagram-icon.svg';
 import TwitterIcon from './assets/svg/twitter-icon.svg';
+import FacebookWhite from './assets/svg/facebook-white.svg';
+import InstagramWhite from './assets/svg/instagram-white.svg';
+import TwitterWhite from './assets/svg/twitter-white.svg';
+import YoutubeWhite from './assets/svg/youtube-white.svg';
 
 function App() {
 
@@ -230,9 +234,24 @@ function App() {
           </div>
         </section>
       </main>
-      <footer className='px-[55px] pt-[60px] bg-[#2B2D32]'>
+      <footer className='px-[40px] pt-[60px] bg-[#2B2D32]'>
         <div>
 
+        </div>
+        <div>
+          <div className='flex justify-between'>
+            <p className='text-[12px] tracking-normal leading-[21px]'>© 2023 Setapp Limited, 9 Tallow Street, Youghal, Co. Cork, P36YE14, Ireland. Reg. 584165. VAT ID: IE3425001BH</p>
+            <div className='flex flex-1 justify-end gap-3'>
+              <img src={FacebookWhite} alt="Facebook White" className='opacity-45' />
+              <img src={TwitterWhite} alt="Twitter White" className='opacity-45' />
+              <img src={InstagramWhite} alt="Instagram White" className='opacity-45' />
+              <img src={YoutubeWhite} alt="Youtube White" className='opacity-45' />
+            </div>
+          </div>
+          <div className='flex gap-4 pt-5 pb-10'>
+            <p className='text-[12px] tracking-normal text-[#969799]'>Terms of Use</p>
+            <p className='text-[12px] tracking-normal text-[#969799]'>Privacy Policy</p>
+          </div>
         </div>
       </footer>
     </>
