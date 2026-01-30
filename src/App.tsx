@@ -1,25 +1,25 @@
 import './App.css'
 
-import Logo from './assets/logo.svg';
-import US from './assets/us.svg';
-import Apple from './assets/apple.svg';
-import Google from './assets/google.svg';
+import Logo from './assets/svg/logo.svg';
+import US from './assets/svg/us.svg';
+import Apple from './assets/svg/apple.svg';
+import Google from './assets/svg/google.svg';
 
-import Pics from './assets/pics.svg';
-import Macpaw from './assets/macpaw.svg';
-import PDF from './assets/pdf.svg';
-import Teamwork from './assets/teamwork.svg';
-import Converter from './assets/converter.svg';
-import Code from './assets/code.svg';
-import Plan from './assets/plan.svg';
-import Manage from './assets/manage.svg';
-import Wifi from './assets/wifi.svg';
-import Secure from './assets/secure.svg';
+import Pics from './assets/svg/pics.svg';
+import Macpaw from './assets/svg/macpaw.svg';
+import PDF from './assets/svg/pdf.svg';
+import Teamwork from './assets/svg/teamwork.svg';
+import Converter from './assets/svg/converter.svg';
+import Code from './assets/svg/code.svg';
+import Plan from './assets/svg/plan.svg';
+import Manage from './assets/svg/manage.svg';
+import Wifi from './assets/svg/wifi.svg';
+import Secure from './assets/svg/secure.svg';
 
 import MacJunk from './assets/img/mac-junk.png';
 import MacPink from './assets/img/mac-pink.png';
 
-import Arrow from './assets/arrow.svg';
+import Arrow from './assets/svg/arrow.svg';
 
 import CallStack from './assets/img/call-stack.png';
 import EditorIcon from './assets/img/editor-icon.png';
@@ -27,8 +27,17 @@ import Editor from './assets/img/editor.png';
 import Meetings from './assets/img/meetings.png';
 
 import Person from './assets/img/person.png';
-import Play from './assets/play.svg';
-import ArrowSlides from './assets/arrow-slides.svg';
+import Play from './assets/svg/play.svg';
+import ArrowSlides from './assets/svg/arrow-slides.svg';
+import ArrowSlidesDark from './assets/svg/arrow-slides-dark.svg';
+
+import Facebook from './assets/svg/facebook.svg';
+import Twitter from './assets/svg/twitter.svg';
+import Instagram from './assets/svg/instagram.svg';
+import Youtube from './assets/svg/youtube.svg';
+import FacebookIcon from './assets/svg/facebook-icon.svg';
+import InstagramIcon from './assets/svg/instagram-icon.svg';
+import TwitterIcon from './assets/svg/twitter-icon.svg';
 
 function App() {
 
@@ -59,7 +68,7 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className=''>
+      <main>
         <section className='relative px-[130px]'>
           <div className='flex relative py-39'>
             <div className='flex-1 relative'>
@@ -132,7 +141,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className='px-[42.5px] my-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
+        <section className='px-[42.5px] mt-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
           <div className='bg-[#765070] rounded-[20px] flex gap-4 px-[60px] relative'>
             <div className='flex flex-col gap-4 flex-1 justify-around my-[110px] ml-[30px]'>
               <div className='flex flex-col gap-6'>
@@ -147,17 +156,84 @@ function App() {
               <img src={ArrowSlides} alt="Arrow Slides" />
             </div>
           </div>
-          <div className='flex justify-center items-center gap-8 mt-8'>
+          <div className='flex justify-center items-center gap-7 py-12'>
             <button className='h-[12px] w-[12px] bg-[#1D1D22] rounded-full'></button>
             <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
             <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
             <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
           </div>
-          
+        </section>
+        <section className='px-[130px] bg-white text-[#26262B]'>
+          <div className='flex pt-[101px] items-start gap-9'>
+            <p className='flex-2 font-semibold text-[36px] leading-[52px]'>Setapp in your words.</p>
+            <p className='flex-1 text-[18px] leading-[32px] tracking-normal'>What you say about how Setapp powers you up.</p>
+            <div className='flex flex-1 justify-end gap-3'>
+              <img src={Facebook} alt="Facebook" className='hover:cursor-pointer' />
+              <img src={Twitter} alt="Twitter" className='hover:cursor-pointer' />
+              <img src={Instagram} alt="Instagram" className='hover:cursor-pointer' />
+              <img src={Youtube} alt="Youtube" className='hover:cursor-pointer' />
+            </div>
+          </div>
+          <div className='flex py-[26px] items-center justify-end gap-14 flex-0'>
+            <img src={ArrowSlidesDark} alt="Arrow Slides" className='rotate-180 opacity-60' />
+            <img src={ArrowSlidesDark} alt="Arrow Slides" className='opacity-60'/>
+          </div>
+          <div className='grid grid-cols-3 gap-10 px-[8px] text-[#26262B] '>
+            <div className='grid-row-span-1 flex-1'>
+              <p className='bg-[#71719A] font-medium h-full py-12 px-6 text-white text-[26px] leading-[37px] tracking-normal rounded-[8px]'>Have been using Setapp for almost two years, and I have to say it's the best and the most cost-effective way of having apps on Mac.</p>
+            </div>
+            <div className='grid-row-span-1 flex-1'>
+              <p className='bg-[#D9AE89] font-medium h-full py-12 px-7 h-full text-white text-[26px] leading-[37px] tracking-normal rounded-[8px]'>My favorites ❤️ from @Setapp Ulysses, CleanMyMac X, Paste, MindNode, Swift Publisher.</p>
+            </div>
+            <div className='grid-row-span-1 flex-1'>
+              <p className='bg-[#765070] font-medium h-full py-12 px-6 h-full text-white text-[26px] leading-[37px] tracking-normal rounded-[8px]'>For those of you that wonder where I discover/get all the awesome apps for my Mac that I use, a lot of them are from Setapp!</p>
+            </div>
+            <div className='flex justify-between items-end px-6'>
+              <div className=''>
+                <p className='font-semibold tracking-normal leading-[32px] text-[18px]'>Arash Pourhabibi</p>
+                <p className='font-semibold tracking-normal leading-[25px] text-[#9F9F9F]'>@ArashPourhabibi</p>
+              </div>
+              <img src={TwitterIcon} alt="Twitter Icon" className='pb-4' />
+            </div>
+            <div className='flex justify-between items-end px-6'>
+              <div className=''>
+                <p className='font-semibold tracking-normal leading-[32px] text-[18px]'>Mauricio Sanchez</p>
+                <p className='font-semibold tracking-normal leading-[25px] text-[#9F9F9F]'>@m741s</p>
+              </div>
+              <img src={InstagramIcon} alt="Instagram Icon" className='pb-4' />
+            </div>
+            <div className='flex justify-between items-end px-6'>
+              <div className=''>
+                <p className='font-semibold tracking-normal leading-[32px] text-[18px]'>Meredith Sweet</p>
+                <p className='font-semibold tracking-normal leading-[25px] text-[#9F9F9F]'>@meredith.sweet.silberstein</p>
+              </div>
+              <img src={FacebookIcon} alt="Facebook Icon" className='pb-4' />
+            </div>
+          </div>
+          <div className='flex justify-center items-center gap-7 mt-14'>
+            <button className='h-[12px] w-[12px] bg-[#1D1D22] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+          </div>
+        </section>
+        <section className='px-[55px] pt-[138px] bg-gradient-to-b from-white from-59% to-[#2B2D32] to-41%'>
+          <div className='bg-white text-[#26262B] rounded-[20px] py-[95px] px-[75px] flex flex-col gap-4'>
+            <img src={Logo} alt="Logo" className='w-[80px] h-[128px]' />
+            <h1 className='font-semibold text-[46px] leading-[60px] tracking-[1.3px]'>Superpowers starting $9.99/month.<br/> Free for 7 days.</h1>
+            <div className='flex pt-14 gap-7'>
+              <button className='bg-[#26262B] text-white px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer'>Get started now</button>
+              <button className='bg-white text-[#26262B] border-1 border-[#26262B] px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer'>More about Setapp</button>
+            </div>
+          </div>
         </section>
       </main>
-      <footer>
+      <footer className='px-[55px] pt-[60px] bg-[#2B2D32]'>
+        <div>
 
+        </div>
       </footer>
     </>
   )
