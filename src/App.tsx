@@ -30,6 +30,7 @@ import Person from './assets/img/person.png';
 import Play from './assets/svg/play.svg';
 import ArrowSlides from './assets/svg/arrow-slides.svg';
 import ArrowSlidesDark from './assets/svg/arrow-slides-dark.svg';
+import ArrowSlidesWhite from './assets/svg/arrow-slides-white.svg';
 
 import Facebook from './assets/svg/facebook.svg';
 import Twitter from './assets/svg/twitter.svg';
@@ -42,6 +43,9 @@ import FacebookWhite from './assets/svg/facebook-white.svg';
 import InstagramWhite from './assets/svg/instagram-white.svg';
 import TwitterWhite from './assets/svg/twitter-white.svg';
 import YoutubeWhite from './assets/svg/youtube-white.svg';
+
+import Setapp from './assets/svg/logo-setapp.svg';
+import Heart from './assets/svg/heart.svg';
 
 function App() {
 
@@ -224,8 +228,8 @@ function App() {
           </div>
         </section>
         <section className='px-[55px] pt-[138px] bg-gradient-to-b from-white from-59% to-[#2B2D32] to-41%'>
-          <div className='bg-white text-[#26262B] rounded-[20px] py-[95px] px-[75px] flex flex-col gap-4'>
-            <img src={Logo} alt="Logo" className='w-[80px] h-[128px]' />
+          <div className='bg-white text-[#26262B] rounded-[20px] py-[95px] px-[75px] flex flex-col gap-4 items-start'>
+            <img src={Logo} alt="Logo" className='h-[128px]' />
             <h1 className='font-semibold text-[46px] leading-[60px] tracking-[1.3px]'>Superpowers starting $9.99/month.<br/> Free for 7 days.</h1>
             <div className='flex pt-14 gap-7'>
               <button className='bg-[#26262B] text-white px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer'>Get started now</button>
@@ -235,10 +239,72 @@ function App() {
         </section>
       </main>
       <footer className='px-[40px] pt-[60px] bg-[#2B2D32]'>
-        <div>
-
+        <div className='flex justify-between gap-20'>
+          <div className='flex justify-between flex-col'>
+            <div className='flex items-center gap-4'>
+              <img src={Logo} alt="Logo" className='h-[32px]' />
+              <img src={Setapp} alt="Setapp Logo" className='h-[14px]' />
+            </div>
+            <div className='flex justify-between flex-col gap-6 mb-10'>
+              <div className='flex items-center'>
+                <p>Updates from our team, written with love </p>
+                <img src={Heart} alt="Heart" className='h-[16px] pl-[2px]' />
+              </div>
+              <form>
+                <input type="email" placeholder='Enter your email' className='bg-[#404547] rounded-l-[6px] px-[12px] py-[14px] w-[250px] focus:outline-none tracking-normal text-[16px]' />
+                <button type="submit" className='bg-white text-[#26262B] px-[23px] py-[18px] rounded-r-[6px] hover:cursor-pointer'>
+                  <img src={ArrowSlidesDark} alt="Arrow Slides" className='w-[8px] opacity-60'/>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className='flex gap-6'>
+            <ul className='text-[16px] tracking-none leading-[32px]'>
+              <li>Home</li>
+              <li>How It Works</li>
+              <li>All Apps</li>
+              <li>Pricing</li>
+              <li>Setapp for Teams</li>
+              <li>Blog</li>
+              <li>Podcast</li>
+              <li>Download</li>
+            </ul>
+            <ul>
+              <li>About</li>
+              <li>Support</li>
+              <li>Education Discount</li>
+              <li>Family Plan</li>
+              <li>For Developers</li>
+              <li>Gift Cards</li>
+              <li>Redeem Card or Code</li>
+              <li>Setapp Reviews</li>
+              <li>Affiliate Program</li>
+              <li>Mac Developer Survey 2023</li>
+            </ul>
+            <ul>
+              <li>Getting started with Setapp</li>
+              <li>Remote access to other Mac</li>
+              <li>Fix macOS Ventura</li>
+              <li>problems</li>
+              <li>Best productivity apps</li>
+              <li>Best YouTube downloaders</li>
+              <li>Uninstall apps</li>
+            </ul>
+          </div>
         </div>
-        <div>
+        <div className='flex items-center justify-between border-b-1 py-10'>
+          <div>
+            <span className='bg-[#969799] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[4px] py-[8px]'>DMCA</span>
+            <span className='bg-[#404547] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[4px] py-[8px]'>PROTECTED</span>
+          </div>
+          <div className='flex items-center justify-center gap-3'>
+            <img src={US} alt="US Flag" />
+            <p>English</p>
+            <img src={ArrowSlidesWhite} alt="Arrow Slides White" className='h-[6px]' />
+          </div>
+        </div>
+        
+        <div className='pt-10'>
           <div className='flex justify-between'>
             <p className='text-[12px] tracking-normal leading-[21px]'>© 2023 Setapp Limited, 9 Tallow Street, Youghal, Co. Cork, P36YE14, Ireland. Reg. 584165. VAT ID: IE3425001BH</p>
             <div className='flex flex-1 justify-end gap-3'>
