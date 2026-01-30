@@ -107,9 +107,9 @@ function App() {
         </section>
         <section className='px-[130px]'>
           <div className='border-t-1 border-b-1'>
-            <div className='flex my-[101px] items-start'>
+            <div className='flex my-[101px] items-start gap-11'>
               <p className='flex-1 font-semibold text-[36px] leading-[52px]'>What you get on Setapp.</p>
-              <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal pr-[45px]'>With a single monthly subscription at $9.99, you get 240+ apps for your Mac.</p>
+              <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal pr-[22px]'>With a single monthly subscription at $9.99, you get 240+ apps for your Mac.</p>
             </div>
             <div className='bg-[#DF96AE] rounded-[20px] px-[37px]'>
               <div className='flex pt-[60px] px-[23px] items-center gap-9'>
@@ -143,16 +143,16 @@ function App() {
               <img src={Arrow} alt="Arrow" />
               <p className='text-[20px] tracking-[1.6px]'>View all superpowers</p>
             </div>
-            <div className='flex my-[101px] items-start gap-6'>
+            <div className='flex my-[101px] items-start gap-11'>
               <p className='flex-1 font-semibold text-[36px] leading-[52px]'>Your Setapp journey.</p>
               <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal'>Type in your task into Setapp search and get instant app recommendations.</p>
             </div>
           </div>
         </section>
-        <section className='px-[42.5px] mt-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
+        <section className='px-[42.5px] mt-[131px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
           <div className='bg-[#765070] rounded-[20px] flex gap-4 px-[60px] relative'>
-            <div className='flex flex-col gap-4 flex-1 justify-around my-[110px] ml-[30px]'>
-              <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-4 flex-1 justify-around mb-[90px] ml-[30px]'>
+              <div className='flex flex-col gap-6 mt-[140px]'>
                 <p className='text-[26px] tracking-normal leading-[40px]'>Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.</p>
                 <p className='text-[16px] font-light tracking-normal'>Jason Staczek</p>
               </div>
