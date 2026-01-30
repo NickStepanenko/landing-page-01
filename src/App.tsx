@@ -26,6 +26,10 @@ import EditorIcon from './assets/img/editor-icon.png';
 import Editor from './assets/img/editor.png';
 import Meetings from './assets/img/meetings.png';
 
+import Person from './assets/img/person.png';
+import Play from './assets/play.svg';
+import ArrowSlides from './assets/arrow-slides.svg';
+
 function App() {
 
   return (
@@ -55,8 +59,8 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className='px-[130px]'>
-        <section className='relative'>
+      <main className=''>
+        <section className='relative px-[130px]'>
           <div className='flex relative py-39'>
             <div className='flex-1 relative'>
               <img src={Pics} alt="Work with pics" className='absolute top-[28px] -left-[14px]' />
@@ -84,7 +88,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className='px-[130px]'>
           <div className='border-t-1 border-b-1'>
             <div className='flex my-[101px] items-start'>
               <p className='flex-1 font-semibold text-[36px] leading-[52px]'>What you get on Setapp.</p>
@@ -126,9 +130,30 @@ function App() {
               <p className='flex-1 font-semibold text-[36px] leading-[52px]'>Your Setapp journey.</p>
               <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal'>Type in your task into Setapp search and get instant app recommendations.</p>
             </div>
-
           </div>
-
+        </section>
+        <section className='px-[30px] my-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
+          <div className='bg-[#765070] rounded-[20px] flex gap-4 px-[60px] relative'>
+            <div className='flex flex-col gap-4 flex-1 justify-around my-[60px]'>
+              <div className='flex flex-col gap-4'>
+                <p className='text-[26px] tracking-normal leading-[40px]'>Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.</p>
+                <p className='text-[16px] font-light tracking-normal'>Jason Staczek</p>
+              </div>
+              <img src={Play} alt="Play" className='bg-white rounded-full h-[74px] w-[74px] p-[29px]' />
+            </div>
+            <img src={Person} alt="Person" className='w-[670px] flex-1 mt-[20px]'/>
+            <div className='flex absolute right-[40px] top-[60px] items-start gap-12 flex-0'>
+              <img src={ArrowSlides} alt="Arrow Slides" className='rotate-180' />
+              <img src={ArrowSlides} alt="Arrow Slides" />
+            </div>
+          </div>
+          <div className='flex justify-center items-center gap-8 mt-8'>
+            <button className='h-[12px] w-[12px] bg-[#1D1D22] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+            <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
+          </div>
+          
         </section>
       </main>
       <footer>
