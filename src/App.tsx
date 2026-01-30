@@ -16,6 +16,9 @@ import Manage from './assets/manage.svg';
 import Wifi from './assets/wifi.svg';
 import Secure from './assets/secure.svg';
 
+import MacJunk from './assets/img/mac-junk.png';
+import MacPink from './assets/img/mac-pink.png';
+
 function App() {
 
   return (
@@ -55,15 +58,15 @@ function App() {
               <img src={Teamwork} alt="Teamwork App" className='absolute top-[320px] -left-[19px]' />
               <img src={Secure} alt="Secure App" className='absolute top-[400px] -left-[20px]' />
             </div>
-            <div className='flex flex-col flex-2 margin-x-auto items-center text-center gap-14'>
-              <img src={Logo} alt="Logo" className='w-[128px] h-[128px] bg-black p-4 rounded-4xl' />
-              <h1 className='text-7xl/19 font-bold'>Dozens of apps. One subscription. $9.99</h1>
-              <div className='flex gap-3'>
-                <button className='bg-white text-[#26262B] px-8 py-2 rounded-md font-medium hover:cursor-pointer mr-3'>Try free for 7 days</button>
-                <button className='bg-white text-[#26262B] px-4 py-2 rounded-md font-medium hover:cursor-pointer'><img src={Apple} alt="Apple Logo" /></button>
-                <button className='bg-white text-[#26262B] px-4 py-2 rounded-md font-medium hover:cursor-pointer'><img src={Google} alt="Google Logo" /></button>
+            <div className='flex flex-col flex-2 margin-x-auto items-center text-center gap-10'>
+              <img src={Logo} alt="Logo" className='w-[128px] h-[128px] bg-black p-4 mb-5 rounded-4xl shadow-sm' />
+              <h1 className='text-[64px]/[68px] font-bold mb-4'>Dozens of apps. One subscription. $9.99</h1>
+              <div className='flex gap-3.5'>
+                <button className='bg-white text-[#26262B] px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer mr-2'>Try free for 7 days</button>
+                <button className='bg-white px-[15px] py-[10px] rounded-md hover:cursor-pointer'><img src={Apple} alt="Apple Logo" /></button>
+                <button className='bg-white px-[15px] py-[10px] rounded-md hover:cursor-pointer'><img src={Google} alt="Google Logo" /></button>
               </div>
-              <p className='text-lg/8 px-36'>Power up your workflow with Setapp, a smart way to get apps.</p>
+              <p className='text-[16px]/[32px] font-light px-36'>Power up your workflow with Setapp, a smart way to get apps.</p>
             </div>
             <div className='flex-1 relative'>
               <img src={Wifi} alt="Wifi App" className='absolute top-[46px] left-[153px]' />
@@ -73,6 +76,33 @@ function App() {
               <img src={Code} alt="Code App" className='absolute top-[422px] left-[140px]' />
             </div>
           </div>
+        </section>
+        <section>
+          <div className='border-t-1 border-b-1'>
+            <div className='flex my-[101px] items-start'>
+              <p className='flex-1 font-semibold text-[36px] leading-[52px]'>What you get on Setapp.</p>
+              <p className='flex-1 font-light text-[18px] leading-[32px] tracking-normal pr-[45px]'>With a single monthly subscription at $9.99, you get 240+ apps for your Mac.</p>
+            </div>
+            <div className='bg-[#DF96AE] rounded-[20px]'>
+              <div>
+                <img src={MacPink} alt="Mac Pink" />
+                <h2>Keep your Mac clean</h2>
+                <p>Remove junk, scan for malware, wipe email attachments</p>
+              </div>
+              <img src={MacJunk} alt="Mac Junk" />
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>View all superpowers</p>
+            <div>
+              <p>Your Setapp journey.</p>
+              <p>Type in your task into Setapp search and get instant app recommendations.</p>
+            </div>
+
+          </div>
+
         </section>
       </main>
       <footer>
