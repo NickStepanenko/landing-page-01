@@ -132,14 +132,14 @@ function App() {
             </div>
           </div>
         </section>
-        <section className='px-[30px] my-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
+        <section className='px-[42.5px] my-[101px] bg-gradient-to-b from-[#26262B] from-50% to-white to-50%'>
           <div className='bg-[#765070] rounded-[20px] flex gap-4 px-[60px] relative'>
-            <div className='flex flex-col gap-4 flex-1 justify-around my-[60px]'>
-              <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 flex-1 justify-around my-[110px] ml-[30px]'>
+              <div className='flex flex-col gap-6'>
                 <p className='text-[26px] tracking-normal leading-[40px]'>Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.</p>
                 <p className='text-[16px] font-light tracking-normal'>Jason Staczek</p>
               </div>
-              <img src={Play} alt="Play" className='bg-white rounded-full h-[74px] w-[74px] p-[29px]' />
+              <span className='bg-white rounded-full h-[74px] w-[74px] flex items-center justify-center'><img src={Play} alt="Play" className='m-auto' /></span>
             </div>
             <img src={Person} alt="Person" className='w-[670px] flex-1 mt-[20px]'/>
             <div className='flex absolute right-[40px] top-[60px] items-start gap-12 flex-0'>
