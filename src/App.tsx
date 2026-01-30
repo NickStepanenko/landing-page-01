@@ -21,6 +21,11 @@ import MacPink from './assets/img/mac-pink.png';
 
 import Arrow from './assets/arrow.svg';
 
+import CallStack from './assets/img/call-stack.png';
+import EditorIcon from './assets/img/editor-icon.png';
+import Editor from './assets/img/editor.png';
+import Meetings from './assets/img/meetings.png';
+
 function App() {
 
   return (
@@ -95,9 +100,23 @@ function App() {
               </div>
               <img src={MacJunk} alt="Mac Junk" />
             </div>
-            <div>
-              <div></div>
-              <div></div>
+            <div className='flex gap-6 mt-6'>
+              <div className='flex flex-1 flex-col bg-[#F4F0E4] rounded-[20px] text-[#26262B]'>
+                <img src={Editor} alt="Editor" />
+                <div className='px-[60px] pb-[60px]'>
+                  <img src={EditorIcon} alt="Editor Icon" className='h-[80px]' />
+                  <h4 className='font-semibold text-[26px] leading-[40px] tracking-normal pt-[20px]'>Write code</h4>
+                  <p className='text-[18px] leading-[32px] tracking-normal'>Create applications in more than 25 languages</p>
+                </div>
+              </div>
+              <div className='flex flex-1 flex-col bg-[#384C75] rounded-[20px]'>
+                <div className='px-[60px] pt-[60px]'>
+                  <img src={Meetings} alt="Meetings" className='h-[68px]' />
+                  <h4 className='font-semibold text-[26px] leading-[40px] tracking-normal pt-[20px]'>Join meetings in a click</h4>
+                  <p className='text-[18px] leading-[32px] tracking-normal'>Quickly access links to your meetings from menu bar</p>
+                </div>
+                <img src={CallStack} alt="Call Stack" className='pt-[53px]'/>
+              </div>
             </div>
             <div className='flex items-center justify-center gap-3 mt-[101px]'>
               <img src={Arrow} alt="Arrow" />
