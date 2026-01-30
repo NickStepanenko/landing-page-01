@@ -227,10 +227,10 @@ function App() {
             <button className='h-[12px] w-[12px] bg-[#D5D4D4] rounded-full'></button>
           </div>
         </section>
-        <section className='px-[55px] pt-[138px] bg-gradient-to-b from-white from-59% to-[#2B2D32] to-41%'>
+        <section className='px-[55px] pt-[140px] bg-gradient-to-b from-white from-59% to-[#2B2D32] to-41%'>
           <div className='bg-white text-[#26262B] rounded-[20px] py-[95px] px-[75px] flex flex-col gap-4 items-start'>
-            <img src={Logo} alt="Logo" className='h-[128px]' />
-            <h1 className='font-semibold text-[46px] leading-[60px] tracking-[1.3px]'>Superpowers starting $9.99/month.<br/> Free for 7 days.</h1>
+            <img src={Logo} alt="Logo" className='h-[123px]' />
+            <h1 className='font-semibold text-[46px] leading-[60px] tracking-[1.3px] pt-1'>Superpowers starting $9.99/month.<br/> Free for 7 days.</h1>
             <div className='flex pt-14 gap-7'>
               <button className='bg-[#26262B] text-white px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer'>Get started now</button>
               <button className='bg-white text-[#26262B] border-1 border-[#26262B] px-[32px] py-[13px] text-[16px] rounded-md hover:cursor-pointer'>More about Setapp</button>
@@ -239,27 +239,27 @@ function App() {
         </section>
       </main>
       <footer className='px-[40px] pt-[60px] bg-[#2B2D32]'>
-        <div className='flex justify-between gap-20'>
-          <div className='flex justify-between flex-col'>
+        <div className='flex justify-between gap-5'>
+          <div className='flex flex-1 justify-between flex-col py-5'>
             <div className='flex items-center gap-4'>
               <img src={Logo} alt="Logo" className='h-[32px]' />
               <img src={Setapp} alt="Setapp Logo" className='h-[14px]' />
             </div>
             <div className='flex justify-between flex-col gap-6 mb-10'>
               <div className='flex items-center'>
-                <p>Updates from our team, written with love </p>
+                <p className='tracking-none'>Updates from our team, written with love </p>
                 <img src={Heart} alt="Heart" className='h-[16px] pl-[2px]' />
               </div>
-              <form>
-                <input type="email" placeholder='Enter your email' className='bg-[#404547] rounded-l-[6px] px-[12px] py-[14px] w-[250px] focus:outline-none tracking-normal text-[16px]' />
+              <form className='flex items-center pb-[55px]'>
+                <input type="email" placeholder='Enter your email' className='bg-[#404547] w-[388px] rounded-l-[6px] px-[12px] py-[14px] w-[250px] focus:outline-none tracking-normal text-[16px]' />
                 <button type="submit" className='bg-white text-[#26262B] px-[23px] py-[18px] rounded-r-[6px] hover:cursor-pointer'>
                   <img src={ArrowSlidesDark} alt="Arrow Slides" className='w-[8px] opacity-60'/>
                 </button>
               </form>
             </div>
           </div>
-          <div className='flex gap-6'>
-            <ul className='text-[16px] tracking-none leading-[32px]'>
+          <div className='flex flex-1 gap-2 font-light text-[15px] tracking-none leading-[32px] pt-5'>
+            <ul className='flex-1'>
               <li>Home</li>
               <li>How It Works</li>
               <li>All Apps</li>
@@ -269,7 +269,7 @@ function App() {
               <li>Podcast</li>
               <li>Download</li>
             </ul>
-            <ul>
+            <ul className='flex-1'>
               <li>About</li>
               <li>Support</li>
               <li>Education Discount</li>
@@ -281,7 +281,7 @@ function App() {
               <li>Affiliate Program</li>
               <li>Mac Developer Survey 2023</li>
             </ul>
-            <ul>
+            <ul className='flex-1'>
               <li>Getting started with Setapp</li>
               <li>Remote access to other Mac</li>
               <li>Fix macOS Ventura</li>
@@ -292,10 +292,10 @@ function App() {
             </ul>
           </div>
         </div>
-        <div className='flex items-center justify-between border-b-1 py-10'>
+        <div className='flex items-center justify-between border-b-1 py-11'>
           <div>
-            <span className='bg-[#969799] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[4px] py-[8px]'>DMCA</span>
-            <span className='bg-[#404547] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[4px] py-[8px]'>PROTECTED</span>
+            <span className='bg-[#969799] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[6px] py-[8px]'>DMCA</span>
+            <span className='bg-[#404547] font-[Arial] font-bold text-[10px] leading-[26px] tracking-none px-[6px] py-[8px]'>PROTECTED</span>
           </div>
           <div className='flex items-center justify-center gap-3'>
             <img src={US} alt="US Flag" />
